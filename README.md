@@ -2,13 +2,13 @@
 
 Get your local ip address in Rust.
 
-```
+```toml
 local-ip = "0.1"
 ```
 
 then
 
-```
+```rust
 extern crate local_ip;
 
 let ip = local_ip::get().unwrap();
