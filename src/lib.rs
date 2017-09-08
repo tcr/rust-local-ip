@@ -38,7 +38,7 @@ pub fn get() -> Option<IpAddr> {
     let re = Regex::new(r#"IPv4 Address[.\s]*:\s*([\d.]+)\s*"#).unwrap();
     for cap in re.captures_iter(&stdout) {
         if let Some(host) = cap.get(1) {
-            if host.as_str() != "127.0.0.1" || host.as_str()[0..7] == "169.254".to_string() {
+            if host.as_str() != "127.0.0.1" && host.as_str()[0..7] != "169.254".to_string() {
                 if let Ok(addr) = host.as_str().parse::<Ipv4Addr>() {
                     return Some(IpAddr::V4(addr))
                 }
