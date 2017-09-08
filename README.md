@@ -3,7 +3,7 @@
 Get your local ip address in Rust.
 
 ```toml
-local-ip = "0.1"
+local-ip = "0.2"
 ```
 
 then
@@ -14,8 +14,6 @@ extern crate local_ip;
 let ip = local_ip::get().unwrap();
 println!("local ip address: {:?}", ip.to_string());
 ```
-
-**TODO:** Windows support.
 
 ## Design
 

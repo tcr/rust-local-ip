@@ -1,10 +1,10 @@
 [package]
 name = "local-ip"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Tim Ryan <id@timryan.org>"]
 description = "Get your local IP address."
 license = "MIT"
 repository = "https://github.com/tcr/rust-local-ip.git"
 
 [dependencies]
-regex = "0.1"
+regex = "0.2"
